@@ -17,12 +17,15 @@ android {
         }
     }
 }
-
+repositories {
+    jcenter()
+}
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
     //    compile 'com.feezu.liuli:timeselector:1.1.1+'
-    compile project(':timeselector')
     compile 'com.android.support:appcompat-v7:25.3.0'
     compile 'com.android.support:design:25.3.0'
+//    compile 'com.zhouwenguang.timeselector:timeselector:0.0.1'
+    compile 'com1.androidlibrary1:timeselector:0.0.1'
 }
